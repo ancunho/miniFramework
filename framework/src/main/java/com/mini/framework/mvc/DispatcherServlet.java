@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Enumeration;
 
 /**
  * 前端控制器
@@ -38,9 +39,14 @@ public class DispatcherServlet extends HttpServlet {
         //获取ServletContext对象 用于注册Servlet
         ServletContext servletContext = config.getServletContext();
 //        UploadHelper.init(servletContext);
-        //注册处理JSP的Servlet
+
+        //注册处理JSP的Servlet-Mapping
         ServletRegistration jspServlet = servletContext.getServletRegistration("jsp");
         jspServlet.addMapping(ConfigHelper.getAppJspPath() + "*");
+
+        //注册处理静态资源的默认Servlet-Mapping
+        ServletRegistration defaultServlet = servletContext.getServletRegistration("default");
+        defaultServlet.addMapping(ConfigHelper.getAppwwwPath() + "*");
 
     }
 
