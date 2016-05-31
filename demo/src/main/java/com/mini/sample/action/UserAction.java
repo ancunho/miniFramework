@@ -1,7 +1,7 @@
 package com.mini.sample.action;
 
 
-import com.mini.framework.DataContext;
+import com.mini.framework.mvc.DataContext;
 import com.mini.framework.annotation.Action;
 import com.mini.framework.annotation.Inject;
 import com.mini.framework.annotation.Request;

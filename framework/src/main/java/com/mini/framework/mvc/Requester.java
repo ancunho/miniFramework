@@ -1,4 +1,4 @@
-package com.mini.framework;
+package com.mini.framework.mvc;
 
 /**
  * 封装 Request 对象相关信息

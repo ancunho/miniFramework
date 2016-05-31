@@ -1,4 +1,4 @@
-package com.mini.framework;
+package com.mini.framework.mvc;
 
 import java.lang.reflect.Method;
 import java.util.regex.Matcher;

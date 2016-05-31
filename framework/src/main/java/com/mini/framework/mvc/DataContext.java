@@ -1,4 +1,4 @@
-package com.mini.framework;
+package com.mini.framework.mvc;
 
 import com.mini.framework.util.CodecUtil;
 import org.apache.commons.lang.ArrayUtils;

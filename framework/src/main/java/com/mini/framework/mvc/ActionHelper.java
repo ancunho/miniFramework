@@ -1,7 +1,5 @@
 package com.mini.framework.mvc;
 
-import com.mini.framework.Handler;
-import com.mini.framework.Requester;
 import com.mini.framework.annotation.Action;
 import com.mini.framework.annotation.Request;
 import com.mini.framework.core.ClassHelper;

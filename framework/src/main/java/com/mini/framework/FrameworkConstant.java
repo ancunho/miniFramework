@@ -13,7 +13,7 @@ public interface FrameworkConstant {
 
     String JSP_PATH = ConfigHelper.getString("mini.framework.app.jsp_path", "/WEB-INF/jsp/");
     String WWW_PATH = ConfigHelper.getString("mini.framework.app.www_path", "/www/");
-    String HOME_PAGE = ConfigHelper.getString("mini.framework.app.home_page", "/index.html");
+    String HOME_PAGE = ConfigHelper.getString("mini.framework.app.home_page", "/products");
     int UPLOAD_LIMIT = ConfigHelper.getInt("mini.framework.app.upload_limit", 10);
 
     String PK_NAME = "id";

@@ -36,7 +36,7 @@ public class ProductAction {
         return new View("product.jsp")
             .data("productBeanPager", productBeanPager);
         */
-        return null;
+        return new View("product.jsp").data("productBeanPager",null);
     }
 
     @Request.Post("/product/search")

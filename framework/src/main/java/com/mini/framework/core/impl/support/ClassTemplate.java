@@ -2,8 +2,8 @@ package com.mini.framework.core.impl.support;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.smart4j.framework.util.ClassUtil;
-import org.smart4j.framework.util.StringUtil;
+import com.mini.framework.util.ClassUtil;
+import com.mini.framework.util.StringUtil;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -75,7 +75,7 @@ public abstract class ClassTemplate {
         try {
             // 获取包名路径下的 class 文件或目录
             File[] files = new File(packagePath).listFiles(new FileFilter() {
-                @Override
+//                @Override
                 public boolean accept(File file) {
                     return (file.isFile() && file.getName().endsWith(".class")) || file.isDirectory();
                 }

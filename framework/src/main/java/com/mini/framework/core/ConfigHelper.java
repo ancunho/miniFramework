@@ -55,4 +55,18 @@ public class ConfigHelper {
     public static Map<String, Object> getMap(String prefix) {
         return PropsUtil.getMap(configProps, prefix);
     }
+
+    /**
+     * 获取应用 JSP 路径
+     */
+    public static String getAppJspPath() {
+        return PropsUtil.getString(configProps, FrameworkConstant.JSP_PATH, "/WEB-INF/jsp/");
+    }
+
+    /**
+     * 获取应用静态资源路径
+     */
+    public static String getAppwwwPath() {
+        return PropsUtil.getString(configProps, FrameworkConstant.WWW_PATH, "/www/");
+    }
 }

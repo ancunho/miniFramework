@@ -3,13 +3,14 @@ package com.mini.framework;
 import com.mini.framework.core.ClassScanner;
 import com.mini.framework.core.ConfigHelper;
 import com.mini.framework.core.impl.DefaultClassScanner;
-import com.mini.framework.dao.DataAccessor;
-import com.mini.framework.dao.impl.DefaultDataAccessor;
-import com.mini.framework.ds.DataSourceFactory;
-import com.mini.framework.ds.impl.DefaultDataSourceFactory;
+//import com.mini.framework.dao.DataAccessor;
+//import com.mini.framework.dao.impl.DefaultDataAccessor;
+//import com.mini.framework.ds.DataSourceFactory;
+//import com.mini.framework.ds.impl.DefaultDataSourceFactory;
 import com.mini.framework.mvc.HandlerExceptionResolver;
 import com.mini.framework.mvc.HandlerInvoker;
 import com.mini.framework.mvc.HandlerMapping;
+//import com.mini.framework.mvc.ViewResolver;
 import com.mini.framework.mvc.ViewResolver;
 import com.mini.framework.mvc.impl.DefaultHandlerExceptionResolver;
 import com.mini.framework.mvc.impl.DefaultHandlerInvoker;
@@ -35,37 +36,37 @@ public class InstanceFactory {
     /**
      * ClassScanner
      */
-    private static final String CLASS_SCANNER = "smart.framework.custom.class_scanner";
+    private static final String CLASS_SCANNER = "mini.framework.custom.class_scanner";
 
     /**
      * DataSourceFactory
      */
-    private static final String DS_FACTORY = "smart.framework.custom.ds_factory";
+    private static final String DS_FACTORY = "mini.framework.custom.ds_factory";
 
     /**
      * DataAccessor
      */
-    private static final String DATA_ACCESSOR = "smart.framework.custom.data_accessor";
+    private static final String DATA_ACCESSOR = "mini.framework.custom.data_accessor";
 
     /**
      * HandlerMapping
      */
-    private static final String HANDLER_MAPPING = "smart.framework.custom.handler_mapping";
+    private static final String HANDLER_MAPPING = "mini.framework.custom.handler_mapping";
 
     /**
      * HandlerInvoker
      */
-    private static final String HANDLER_INVOKER = "smart.framework.custom.handler_invoker";
+    private static final String HANDLER_INVOKER = "mini.framework.custom.handler_invoker";
 
     /**
      * HandlerExceptionResolver
      */
-    private static final String HANDLER_EXCEPTION_RESOLVER = "smart.framework.custom.handler_exception_resolver";
+    private static final String HANDLER_EXCEPTION_RESOLVER = "mini.framework.custom.handler_exception_resolver";
 
     /**
      * ViewResolver
      */
-    private static final String VIEW_RESOLVER = "smart.framework.custom.view_resolver";
+    private static final String VIEW_RESOLVER = "mini.framework.custom.view_resolver";
 
     /**
      * 获取 ClassScanner
@@ -77,16 +78,16 @@ public class InstanceFactory {
     /**
      * 获取 DataSourceFactory
      */
-    public static DataSourceFactory getDataSourceFactory() {
-        return getInstance(DS_FACTORY, DefaultDataSourceFactory.class);
-    }
-
-    /**
-     * 获取 DataAccessor
-     */
-    public static DataAccessor getDataAccessor() {
-        return getInstance(DATA_ACCESSOR, DefaultDataAccessor.class);
-    }
+//    public static DataSourceFactory getDataSourceFactory() {
+//        return getInstance(DS_FACTORY, DefaultDataSourceFactory.class);
+//    }
+//
+//    /**
+//     * 获取 DataAccessor
+//     */
+//    public static DataAccessor getDataAccessor() {
+//        return getInstance(DATA_ACCESSOR, DefaultDataAccessor.class);
+//    }
 
     /**
      * 获取 HandlerMapping
