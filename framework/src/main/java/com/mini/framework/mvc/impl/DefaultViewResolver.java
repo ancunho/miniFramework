@@ -16,8 +16,6 @@ import java.util.Map;
 /**
  * 默认视图解析器
  *
- * @author huangyong
- * @since 2.3
  */
 public class DefaultViewResolver implements ViewResolver {
 
